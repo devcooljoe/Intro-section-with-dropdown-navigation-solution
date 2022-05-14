@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="sidebar navbar navbar-expand-sm bg-light navbar-light">
+    <nav id="top-navbar" class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand brand-style" href="#">Snap</a>
             <button id="open-menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -86,6 +86,7 @@
             </div>
         </div>
     </section>
+    <div style="width: 500px;height: 1000px;"></div>
     <div class="attribution">
         <p class="text-center">
             Challenge by
@@ -126,6 +127,15 @@
                     $('#company img').attr('src', './images/icon-arrow-down.svg');
                 }
             });
+        });
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if (window.pageYOffset > 35) {
+                $('#top-navbar').addClass('sidebar');
+            } else {
+                $('#top-navbar').removeClass('sidebar');
+            }
         });
     </script>
 </body>
