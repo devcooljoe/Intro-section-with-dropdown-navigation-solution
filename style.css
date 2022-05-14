@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Jost:wght@300&display=swap');
+* {
+    font-family: 'Epilogue';
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.brand-style {
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.link-nav .nav-item .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.2s ease-in;
+}
+
+.link-nav a {
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.2s ease-in;
+}
+
+.link-nav div div li {
+    font-size: 13px;
+}
+
+.link-nav div div li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    font-weight: normal;
+}
+
+.link-nav div div {
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 0px 20px 10px rgb(240, 240, 240);
+    min-width: 70px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    animation: AnimateDropDown 0.2s ease-in-out;
+}
+
+.login-button {
+    border: none;
+    color: gray;
+    background: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    transition: all 0.2s ease-in;
+    font-weight: 500;
+    /* animation: animateregisterbutton 0.2s forwards ease-out; */
+}
+
+.login-button:hover,
+.login-button:active,
+.login-button:focus {
+    color: hsl(0, 0%, 8%) !important;
+    background: none !important;
+    box-shadow: none !important;
+    /* animation: animateloginbutton 0.2s forwards ease-in; */
+}
+
+.register-button {
+    border: 2px solid gray;
+    color: gray;
+    background: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    transition: all 0.2s ease-in;
+    font-weight: 500;
+    /* animation: animateloginbutton 0.2s forwards ease-in; */
+}
+
+.more-button {
+    border: 2px solid hsl(0, 0%, 8%);
+    color: white;
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    transition: all 0.2s ease-in;
+    font-weight: 500;
+    /* animation: animateloginbutton 0.2s forwards ease-in; */
+}
+
+.more-button:hover,
+.more-button:active,
+.more-button:focus {
+    border: 2px solid hsl(0, 0%, 8%) !important;
+    color: hsl(0, 0%, 8%) !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.register-button:hover,
+.register-button:active,
+.register-button:focus {
+    border: 2px solid hsl(0, 0%, 8%) !important;
+    color: hsl(0, 0%, 8%) !important;
+    background: none !important;
+    box-shadow: none !important;
+    /* animation: animateregisterbutton 0.2s forwards ease-out; */
+}
+
+.navbar-light {
+    background-color: hsl(0, 0%, 98%) !important;
+}
+
+@keyframes animateloginbutton {
+    from {
+        border: 2px solid hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 8%);
+        background: none;
+    }
+    to {
+        border: 1px solid hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        background: none;
+    }
+}
+
+@keyframes animateregisterbutton {
+    from {
+        border: 1px solid hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        background: none;
+    }
+    to {
+        border: 2px solid hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 8%);
+        background: none;
+    }
+}
+
+.top-container {
+    width: 70%;
+}
+
+@media screen and (max-width: 375px) {
+    .top-container {
+        width: 100%;
+    }
+}
+
+.top-title {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.top-desc {
+    color: gray;
+}
+
+.icon-img>img {
+    /* width: 70px; */
+}
+
+@keyframes AnimateDropDown {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes AnimateDropDownResponsive {
+    from {
+        height: 0px;
+        opacity: 0.1;
+    }
+    to {
+        height: 110px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .link-nav div div {
+        background-color: white;
+        border-radius: 0px;
+        border: none;
+        box-shadow: none;
+        padding-top: 0px !important;
+        padding-bottom: 10px !important;
+        animation: AnimateDropDownResponsive 0.5s ease-in-out;
+    }
+}
+
+.close-nav-button {
+    display: none;
+}
+
+.toggler-big {
+    display: block;
+}
+
+.toggler-small {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    .toggler-big {
+        display: none;
+    }
+    .toggler-small {
+        display: block;
+    }
+    .close-nav-button {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .custom-navbar {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 99;
+        background-color: white;
+        padding: 30px;
+        height: 100%;
+        width: 70%;
+        box-shadow: 0px -10px 10px 1000px rgba(0, 0, 0, 0.5);
+    }
+    .custom-navbar-open-transition {
+        animation: animateNavForward 0.5s;
+    }
+    .custom-navbar-close-transition {
+        animation: animateNavReverse 0.5s forwards;
+    }
+    .link-nav {
+        margin-top: 20px;
+    }
+    .link-nav div {
+        margin-bottom: 10px;
+    }
+    .custom-navbar .d-inline {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .custom-navbar .d-inline a {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px !important;
+        margin-bottom: 5px !important;
+    }
+}
+
+@keyframes animateNavForward {
+    from {
+        width: 0%;
+        height: 100%;
+        right: -100px;
+        display: block;
+    }
+    to {
+        width: 70%;
+        height: 100%;
+        right: 0px;
+        display: block;
+        box-shadow: 0px -10px 10px 1000px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes animateNavReverse {
+    0% {
+        width: 70%;
+        height: 100%;
+        right: 0px;
+        display: block;
+    }
+    99% {
+        width: 0%;
+        height: 100%;
+        right: -100px;
+        display: block;
+    }
+    100% {
+        width: 0%;
+        height: 100%;
+        right: -100px;
+        display: none;
+        box-shadow: none;
+    }
+}
